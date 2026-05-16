@@ -1,5 +1,7 @@
-const button = document.getElementById('cta');
+const donateButtons = document.querySelectorAll('[data-donate]');
 
-button?.addEventListener('click', () => {
-  alert('Thanks for visiting Atelier Stolle!');
+donateButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    alert('Thank you for supporting Atelier Stolle. Donation details are coming soon.');
+  });
 });

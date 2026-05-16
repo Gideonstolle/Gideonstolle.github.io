@@ -7,18 +7,68 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
-      <h1>Welcome to Atelier Stolle</h1>
-      <p>A simple starter website.</p>
-      <button id="cta">Click Me</button>
+    <header class="site-header">
+      <a class="brand" href="index.html">Atelier Stolle<br /><small class="brand-subtitle">since 1993</small></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a aria-current="page" href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="shop.html">Shop</a>
+        <button class="donate-button" type="button" data-donate>Donate</button>
+      </nav>
     </header>
 
     <main>
-      <section>
-        <h2>About</h2>
-        <p>This page includes basic HTML, CSS, and JavaScript.</p>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Art, craft, and community</p>
+          <h1>Welcome to Atelier Stolle</h1>
+          <p>
+            A warm creative space for exhibitions, workshops, photography, and
+            handcrafted objects.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="gallery.html">View Gallery</a>
+            <a class="button secondary" href="about.html">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">What we do</p>
+          <h2>A home for making and sharing</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Workshops</h3>
+            <p>Small group sessions focused on hands-on making and experimentation.</p>
+          </article>
+          <article>
+            <h3>Exhibitions</h3>
+            <p>Seasonal displays featuring local artists, makers, and guests.</p>
+          </article>
+          <article>
+            <h3>Community</h3>
+            <p>A welcoming place to meet, support, and celebrate creative work.</p>
+          </article>
+        </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div>
+        <p class="footer-brand">Atelier Stolle</p>
+        <p>&copy; 2026 Galerie Hendrik Stollé Edelsmid. All rights reserved.</p>
+      </div>
+      <address class="footer-contact">
+        <a href="mailto:atelierhstolle@gmail.com">atelierhstolle@gmail.com</a>
+        <a href="tel:+31661212850">+31 6 61212850</a>
+        <span>Klarendalseweg 401, 6822GT</span>
+        <span>KVK 09077514</span>
+        <span>Vestigingsnummer 000012202991</span>
+      </address>
+    </footer>
 
     <script src="script.js"></script>
   </body>
